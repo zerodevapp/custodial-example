@@ -12,12 +12,12 @@ const contractABI = [
 ]
 const publicClient = createPublicClient({ 
     chain: polygonMumbai,
-    transport: http()
+    transport: http('https://polygon-mumbai.infura.io/v3/f36f7f706a58477884ce6fe89165666c')
 })
 
 const main = async () => {
     const owner = await getCustodialOwner(
-        '<any-kind-of-user-id>', // This can litlerally be anything to identify a wallet
+        'anyUserId', // This can litlerally be anything to identify a wallet
         {
             custodialFilePath: 'custodial.txt',
         }
