@@ -1,4 +1,4 @@
-const { ECDSAProvider, getCustodialOwner } = require('@zerodevapp/sdk')
+const { ECDSAProvider, getCustodialOwner } = require('@zerodev/sdk')
 const { encodeFunctionData, parseAbi, createPublicClient, http } = require('viem');
 const { polygonMumbai } = require('viem/chains')
 
